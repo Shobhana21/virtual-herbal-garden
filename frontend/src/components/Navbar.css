@@ -1,0 +1,45 @@
+/* src/components/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  letter-spacing: 0.2px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 0.9rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  color: #0f172a; /* dark text */
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  background: rgba(15,23,42,0.06);
+}
+
+@media (max-width: 700px) {
+  .navbar ul {
+    display: none; /* we'll keep it simple for now */
+  }
+}
