@@ -14,7 +14,7 @@ const plants = [
   },
   {
     name: "Neem",
-    category: "Skincare",
+    category: "Haircare",
     description: "Known for antibacterial properties, great for acne.",
     image: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Neem_tree_leaves.jpg",
   },
@@ -29,6 +29,12 @@ const plants = [
     category: "Haircare",
     description: "Promotes hair growth and prevents dandruff.",
     image: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Eclipta_alba_flower.jpg",
+  },
+  {
+    name: "Shikakai",
+    category: "Haircare",
+    description: "Natural cleanser for healthy, shiny hair.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Shikakai_fruit.jpg",
   },
   {
     name: "Shikakai",
