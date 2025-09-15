@@ -26,4 +26,17 @@ router.get("/", async (req, res) => {
   }
 });
 
+// GET plants by category
+router.get("/category/:category", async (req, res) => {
+  try {
+    const category = req.params.category;
+    const plants = await Plant.find({
+      category: { $regex: new RegExp(`^${category}$`, "i") },
+    });
+    res.json(plants);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+});
+
 module.exports = router;
