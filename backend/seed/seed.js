@@ -14,7 +14,7 @@ const plants = [
   },
   {
     name: "Neem",
-    category: "Haircare",
+    category: "Skincare",
     description: "Known for antibacterial properties, great for acne.",
     image: "https://t4.ftcdn.net/jpg/06/66/22/45/360_F_666224592_nId6bSdaOgx8yjgEvokpP791NG5WYXw3.jpg",
   },
@@ -28,19 +28,70 @@ const plants = [
     name: "Bhringraj",
     category: "Haircare",
     description: "Promotes hair growth and prevents dandruff.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Eclipta_alba_flower.jpg",
+    image: "https://thumbs.dreamstime.com/b/bhringraj-flower-blooming-garden-bhringraj-bhringraj-also-known-as-kesharaj-which-means-ruler-hair-rich-336944061.jpg",
   },
   {
     name: "Shikakai",
     category: "Haircare",
     description: "Natural cleanser for healthy, shiny hair.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Shikakai_fruit.jpg",
+    image: "https://m.media-amazon.com/images/I/61rrG6P3ywL._UF1000,1000_QL80_.jpg",
   },
   {
-    name: "Shikakai",
+    name: "Turmeric",
+    category: "Medicinal",
+    description: "Natural cleanser for healthy, shiny hair.",
+    image: "https://m.media-amazon.com/images/I/91EKS8TNoHL._UF1000,1000_QL80_.jpg",
+  },
+  {
+    name: "Sandal wood",
+    category: "Skincare",
+    description: "Natural cleanser for healthy, shiny hair.",
+    image: "https://m.media-amazon.com/images/I/91EKS8TNoHL._UF1000,1000_QL80_.jpg",
+  },{
+    name: "Vetiver",
+    category: "Skincare",
+    description: "Natural cleanser for healthy, shiny hair.",
+    image: "https://m.media-amazon.com/images/I/91EKS8TNoHL._UF1000,1000_QL80_.jpg",
+  },{
+    name: "Amla",
     category: "Haircare",
     description: "Natural cleanser for healthy, shiny hair.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Shikakai_fruit.jpg",
+    image: "https://m.media-amazon.com/images/I/91EKS8TNoHL._UF1000,1000_QL80_.jpg",
+  },{
+    name: "Henna",
+    category: "Haircare",
+    description: "Natural cleanser for healthy, shiny hair.",
+    image: "https://m.media-amazon.com/images/I/91EKS8TNoHL._UF1000,1000_QL80_.jpg",
+  },{
+    name: "Hibiscus",
+    category: "Haircare",
+    description: "Natural cleanser for healthy, shiny hair.",
+    image: "https://m.media-amazon.com/images/I/91EKS8TNoHL._UF1000,1000_QL80_.jpg",
+  },{
+    name: "Rosemary",
+    category: "Haircare",
+    description: "Natural cleanser for healthy, shiny hair.",
+    image: "https://m.media-amazon.com/images/I/91EKS8TNoHL._UF1000,1000_QL80_.jpg",
+  },{
+    name: "Fenugreek",
+    category: "Haircare",
+    description: "Natural cleanser for healthy, shiny hair.",
+    image: "https://m.media-amazon.com/images/I/91EKS8TNoHL._UF1000,1000_QL80_.jpg",
+  },{
+    name: "Moringa",
+    category: "Medicinal",
+    description: "Natural cleanser for healthy, shiny hair.",
+    image: "https://m.media-amazon.com/images/I/91EKS8TNoHL._UF1000,1000_QL80_.jpg",
+  },{
+    name: "Green Tea",
+    category: "Skincare",
+    description: "Natural cleanser for healthy, shiny hair.",
+    image: "https://m.media-amazon.com/images/I/91EKS8TNoHL._UF1000,1000_QL80_.jpg",
+  },{
+    name: "Ashwagandha",
+    category: "Medicinal",
+    description: "Natural cleanser for healthy, shiny hair.",
+    image: "https://m.media-amazon.com/images/I/91EKS8TNoHL._UF1000,1000_QL80_.jpg",
   },
 ];
 

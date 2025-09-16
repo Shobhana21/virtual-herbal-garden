@@ -1,4 +1,4 @@
-/* src/components/Navbar.css */
+/* src/components/Navbar.css
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -30,7 +30,7 @@
   text-decoration: none;
   padding: 0.35rem 0.6rem;
   border-radius: 6px;
-  color: #0f172a; /* dark text */
+  color: #0f172a; 
   font-weight: 500;
 }
 
@@ -40,6 +40,42 @@
 
 @media (max-width: 700px) {
   .navbar ul {
-    display: none; /* we'll keep it simple for now */
+    display: none; 
   }
+} */
+
+/* src/components/Navbar.css */
+
+.navbar {
+  background-color: #2e7d32; /* herbal green */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
+
+.navbar h1 {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #c8e6c9; /* light green */
+}
+

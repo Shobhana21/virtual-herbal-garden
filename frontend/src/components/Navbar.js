@@ -1,20 +1,17 @@
 // src/components/Navbar.js
-import React from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css"; // we'll style later
+import "./Navbar.css";
 
-function Navbar() {
+export default function Navbar() {
   return (
     <nav className="navbar">
-      <h2>🌿 Virtual Herbal Garden</h2>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/explore">Explore</Link></li>
-        <li><Link to="/quiz">Quiz</Link></li>
-        <li><Link to="/about">About</Link></li>
-      </ul>
+      <h1>🌿 Herbal Garden</h1>
+      <div className="nav-links">
+        <Link to="/">Home</Link>
+        <Link to="/explore">Explore</Link>
+        <Link to="/about">About</Link>
+        <Link to="/quiz">Quiz</Link>
+      </div>
     </nav>
   );
 }
-
-export default Navbar;
