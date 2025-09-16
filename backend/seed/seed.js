@@ -10,19 +10,19 @@ const plants = [
     name: "Aloe Vera",
     category: "Skincare",
     description: "Used for skin soothing and healing burns.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/f/f5/Aloe_vera_flower.JPG",
+    image: "https://www.lotus.in/cdn/shop/files/Aloe_Vera_19d03d67-a8e3-4e65-bd94-12222849c32d_600x.jpg?v=1712987991",
   },
   {
     name: "Neem",
     category: "Haircare",
     description: "Known for antibacterial properties, great for acne.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Neem_tree_leaves.jpg",
+    image: "https://t4.ftcdn.net/jpg/06/66/22/45/360_F_666224592_nId6bSdaOgx8yjgEvokpP791NG5WYXw3.jpg",
   },
   {
     name: "Tulsi",
     category: "Medicinal",
     description: "Boosts immunity and relieves stress.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/f/fd/Tulsi_leaves.jpg",
+    image: "https://www.ugaoo.com/cdn/shop/articles/561da47a50.jpg?v=1729499689",
   },
   {
     name: "Bhringraj",

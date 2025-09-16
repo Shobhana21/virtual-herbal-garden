@@ -21,21 +21,21 @@ export default function Home() {
       <Slider {...settings}>
         <div>
           <img
-            src="https://example.com/aloe.jpg"
+            src="https://www.lotus.in/cdn/shop/files/Aloe_Vera_19d03d67-a8e3-4e65-bd94-12222849c32d_600x.jpg?v=1712987991"
             alt="Aloe Vera"
             style={{ width: "100%", height: "400px", objectFit: "cover", borderRadius: "10px" }}
           />
         </div>
         <div>
           <img
-            src="https://example.com/neem.jpg"
+            src="https://t4.ftcdn.net/jpg/06/66/22/45/360_F_666224592_nId6bSdaOgx8yjgEvokpP791NG5WYXw3.jpg"
             alt="Neem"
             style={{ width: "100%", height: "400px", objectFit: "cover", borderRadius: "10px" }}
           />
         </div>
         <div>
           <img
-            src="https://example.com/tulsi.jpg"
+            src="https://www.ugaoo.com/cdn/shop/articles/561da47a50.jpg?v=1729499689"
             alt="Tulsi"
             style={{ width: "100%", height: "400px", objectFit: "cover", borderRadius: "10px" }}
           />
