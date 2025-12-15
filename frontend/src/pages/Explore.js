@@ -1,11 +1,16 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import "./Explore.css";
+import { useNavigate } from "react-router-dom";
+
 
 export default function Explore() {
   const [plants, setPlants] = useState([]);
   const [category, setCategory] = useState("All");
   const [expandedId, setExpandedId] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
+  const navigate = useNavigate();
+
 
   useEffect(() => {
     const fetchPlants = async () => {
@@ -23,9 +28,24 @@ export default function Explore() {
     fetchPlants();
   }, [category]);
 
+  const filteredPlants = plants.filter((plant) =>
+    plant.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  // ✅ RETURN MUST BE INSIDE THE FUNCTION
   return (
     <div className="explore-container">
-      {/* Filter Buttons */}
+      <div className="search-container">
+  <input
+    type="text"
+    placeholder="Search plants by name..."
+    value={searchTerm}
+    onChange={(e) => setSearchTerm(e.target.value)}
+    className="search-input"
+  />
+</div>
+
+
       <div className="filter-buttons">
         <button onClick={() => setCategory("All")}>All</button>
         <button onClick={() => setCategory("Skincare")}>Skincare</button>
@@ -33,30 +53,31 @@ export default function Explore() {
         <button onClick={() => setCategory("Medicinal")}>Medicinal</button>
       </div>
 
-      {/* Plant Cards */}
       <div className="plant-grid">
-        {plants.map((plant) => (
-          <div key={plant._id} className="plant-card">
-            <img src={plant.image} alt={plant.name} />
-            <h3>{plant.name}</h3>
-            <p>
-              <strong>Category:</strong> {plant.category}
-            </p>
+        {filteredPlants.length > 0 ? (
+  filteredPlants.map((plant) => (
+    <div key={plant._id} className="plant-card">
+      <img src={plant.image} alt={plant.name} />
+      <h3>{plant.name}</h3>
+      <p>
+        <strong>Category:</strong> {plant.category}
+      </p>
 
-            {/* Button to toggle description */}
-            <button
-              className="toggle-btn"
-              onClick={() =>
-                setExpandedId(expandedId === plant._id ? null : plant._id)
-              }
-            >
-              {expandedId === plant._id ? "Hide Description" : "View Description"}
-            </button>
+      <button
+  className="toggle-btn"
+  onClick={() => navigate(`/plant/${plant._id}`)}
+>
+  View Description
+</button>
 
-            {/* Conditionally render description */}
-            {expandedId === plant._id && <p>{plant.description}</p>}
-          </div>
-        ))}
+
+      {expandedId === plant._id && <p>{plant.description}</p>}
+    </div>
+  ))
+) : (
+  <p className="no-results">No plants found 🌱</p>
+)}
+
       </div>
     </div>
   );

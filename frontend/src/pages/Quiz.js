@@ -38,31 +38,43 @@ export default function Quiz() {
   };
 
   return (
-    <div className="quiz-container">
-      <h1 className="quiz-title">🌿 Herbal Quiz</h1>
-      {showScore ? (
-        <div>
-          <p className="score-section">
-            Your Score: {score} / {questions.length}
-          </p>
-          <button className="restart-btn" onClick={restartQuiz}>
-            Restart Quiz
-          </button>
-        </div>
-      ) : (
-        <div>
-          <h2 className="quiz-question">{questions[currentQ].question}</h2>
-          {questions[currentQ].options.map((option, idx) => (
-            <button
-              key={idx}
-              className="option-btn"
-              onClick={() => handleAnswer(option)}
-            >
-              {option}
+    <div className="quiz-page">
+      <div className="quiz-container">
+        {/* everything that was already inside stays here */}
+      
+        <h1 className="quiz-title">🌿 Herbal Quiz</h1>
+
+        {showScore ? (
+          <div className="score-section">
+            <h2>Your Score: {score} / {questions.length}</h2>
+            <button className="restart-btn" onClick={restartQuiz}>
+              Restart Quiz
             </button>
-          ))}
-        </div>
-      )}
+          </div>
+        ) : (
+          <div>
+            <p className="quiz-progress">
+    Question {currentQ + 1} of {questions.length}
+  </p>
+
+  <h2 className="quiz-question">
+    {questions[currentQ].question}
+  </h2>
+
+            {questions[currentQ].options.map((option, idx) => (
+              <button
+                key={idx}
+                className="option-btn"
+                onClick={() => handleAnswer(option)}
+              >
+                {option}
+              </button>
+            ))}
+          </div>
+        )}
+
+      </div>
     </div>
   );
+
 }

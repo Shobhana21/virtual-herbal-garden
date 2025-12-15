@@ -39,4 +39,15 @@ router.get("/category/:category", async (req, res) => {
   }
 });
 
+// Get plant by ID
+router.get("/:id", async (req, res) => {
+  try {
+    const plant = await Plant.findById(req.params.id);
+    res.json(plant);
+  } catch (error) {
+    res.status(404).json({ message: "Plant not found" });
+  }
+});
+
+
 module.exports = router;

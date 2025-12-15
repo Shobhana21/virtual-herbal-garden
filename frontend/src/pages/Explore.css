@@ -28,19 +28,29 @@
 
 .plant-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-items: center;
 }
 
+
 .plant-card {
-  border: 1px solid #ddd;
+  width: 100%;
+  max-width: 350px;
+  background: #f9fff9;
   border-radius: 12px;
-  padding: 1rem;
-  text-align: center;
-  background-color: #f9fff9;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s;
+  padding: 15px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
 }
+
+.plant-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 
 .plant-card:hover {
   transform: translateY(-5px);
@@ -78,4 +88,43 @@
 
 .toggle-btn:hover {
   background-color: #4caf50;
+}
+
+/* Search Bar Container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+/* Search Input */
+.search-input {
+  width: 320px;
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: 1px solid #cfcfcf;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* On Focus (very important for UX) */
+.search-input:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 6px 14px rgba(46, 125, 50, 0.25);
+}
+
+/* Placeholder styling */
+.search-input::placeholder {
+  color: #888;
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #2e7d32;
+  padding: 40px 0;
+  font-weight: 500;
 }

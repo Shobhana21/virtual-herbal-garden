@@ -1,22 +1,5 @@
 /* src/pages/Home.css */
 
-.home-container {
-  padding: 2rem;
-  text-align: center;
-}
-
-.home-title {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #2e7d32; /* deep green */
-  font-weight: bold;
-}
-
-.home-subtitle {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  color: #555;
-}
 
 .slick-slide img {
   width: 100%;
@@ -33,4 +16,150 @@
 
 .slick-dots li.slick-active button:before {
   color: #66bb6a; /* light green */
+}
+
+.home-container {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.home-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2e7d32;
+}
+
+.home-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+/* Carousel */
+.carousel-slide {
+  position: relative;
+  height: 400px;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.carousel-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.75)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+  color: white;
+  border-radius: 14px;
+}
+
+.carousel-overlay h2 {
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+.carousel-overlay p {
+  font-size: 1.1rem;
+  max-width: 500px;
+}
+
+.home-cta {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.cta-btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.cta-btn.primary {
+  background: #2e7d32;
+  color: white;
+}
+
+.cta-btn.primary:hover {
+  background: #1b5e20;
+}
+
+.cta-btn.secondary {
+  border: 2px solid #2e7d32;
+  color: #2e7d32;
+}
+
+.cta-btn.secondary:hover {
+  background: #e8f5e9;
+}
+
+.section-title {
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #2e7d32;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 0 30px;
+}
+
+.featured-card {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.featured-card:hover {
+  transform: translateY(-6px);
+}
+
+.featured-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.featured-card h3 {
+  margin: 12px 0 5px;
+}
+
+.featured-card p {
+  color: #666;
+}
+
+.details-btn {
+  display: inline-block;
+  margin: 12px 0 18px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  background: #66bb6a;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.details-btn:hover {
+  background: #388e3c;
 }
