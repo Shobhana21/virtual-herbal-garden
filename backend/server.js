@@ -6,6 +6,7 @@ import cors from "cors";
 import morgan from "morgan";
 
 import plantRoutes from "./routes/plantRoutes.js";
+import authRoutes from "./routes/authRoutes.js"; 
 
 dotenv.config();
 
@@ -16,8 +17,9 @@ app.use(cors());
 app.use(express.json());
 app.use(morgan("dev"));
 
-//Routes
+// Routes
 app.use("/api/plants", plantRoutes);
+app.use("/api/auth", authRoutes); 
 
 // Test route
 app.get("/", (req, res) => {
